@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    background: #F2F2F2;
+}
+header .header_div .title{
+    color: #000;
+    font-size: 27.451px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 27.165px;
+    margin: 0;
+}
+header .header_div span{
+    color: #1B1B1B;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
