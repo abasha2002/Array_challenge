@@ -28,3 +28,66 @@ header .header_div span{
     font-weight: 400;
     line-height: normal;
 }
+section .card{
+    overflow: hidden;
+    height: 580px;
+    position: relative;
+}
+section h5{
+    color: #4CD964;
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 2px;
+}
+section h2{
+    color: #1B1B1B;
+    font-family: 'Poppins';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 34px;
+    letter-spacing: -1px;
+}
+section p{
+    color: #9B9B9B;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+section span{
+    color: #9B9B9B;
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+}
+section .card-body, section .card-footer{
+    padding: 20px 30px;
+    background-color: white;
+}
+section .card:hover{
+    background-color: black;
+}
+section .card:hover .card-body{
+    background-color: black;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+section .card:hover .card-footer{
+    background-color: black;
+}
+section .card:hover h5{
+    position: absolute;
+    top: 34px;
+    left: 30px;
+    color: white;
+}
+section .card:hover h2{
+    font-size: 36px;
+    color: white;
+}
