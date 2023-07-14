@@ -29,7 +29,7 @@ var cardArray = [
         description3: "The highest quality tracking has gotten even better with Base Station 2.0, now with improved range, field of view, and scalability.",
         comment3: "349", 
         views3: "49500"
-    },
+    }
 ]
 cardArray.forEach(function(card, index) {
     var titleElement = document.getElementById("card" + (index + 1) + "-title");
@@ -49,4 +49,33 @@ cardArray.forEach(function(card, index) {
 
     var viewElement = document.getElementById("card" + (index + 1) + "-views");
     viewElement.innerHTML = card["views" + (index + 1)];
+});
+
+
+var footerArray = [
+    {
+        text1: "CONTACT",
+        text2: "HELP",
+        text3: "TERMS OF USE",
+        text4: "PRIVACY POLICY"
+    },
+    
+    {
+        logo1: 'static/images/Twitter.svg',
+        logo2: 'static/images/Facebook.svg',
+        logo3: 'static/images/YouTube.svg'
+    }
+]
+
+var firstObjectValues = Object.values(footerArray[0]);
+var secondObjectValues = Object.values(footerArray[1]);
+
+firstObjectValues.forEach(function (value, index) {
+  var footerLinks = document.getElementById("footer-link" + (index + 1));
+  footerLinks.innerHTML = value;
+});
+
+secondObjectValues.forEach(function (value, index) {
+  var MediaLogos = document.getElementById("socMediaLogo" + (index + 1));
+  MediaLogos.src = value;
 });
